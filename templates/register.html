@@ -1,0 +1,4 @@
+{% extends "base.html" %}{% block content %}<section class="card"><h2>Create account</h2><form method="post">
+<label>Username</label><input name="username" minlength="3" maxlength="30" required autocomplete="username">
+<label>Password (at least 8 characters)</label><input type="password" name="password" minlength="8" required autocomplete="new-password">
+<button type="submit">Register</button></form></section>{% endblock %}

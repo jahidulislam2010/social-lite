@@ -1,0 +1,12 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      SECRET_KEY: "local-demo-change-this"
+      DATABASE_PATH: /data/social.db
+    volumes:
+      - social_data:/data
+volumes:
+  social_data:
